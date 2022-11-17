@@ -10393,7 +10393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &807142510590016893
 Transform:
   m_ObjectHideFlags: 0
@@ -15682,19 +15682,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &5485587415170504732
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5485587415826585347}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.364319, y: 5.9009895, z: 7.065918}
-  m_Center: {x: 0.18258667, y: 2.3142738, z: 0.4764099}
 --- !u!195 &5485587415170504735
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16764,8 +16751,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5485587415826853467}
   - component: {fileID: 5485587415817070367}
-  - component: {fileID: 5485587415170504732}
   - component: {fileID: 5485587415170504735}
+  - component: {fileID: 5485587415826853470}
+  - component: {fileID: 5485587415826853469}
+  - component: {fileID: 5485587415826853468}
   - component: {fileID: 1074736364}
   m_Layer: 0
   m_Name: NightMareDragon
@@ -17483,7 +17472,7 @@ Transform:
   m_GameObject: {fileID: 5485587415826585347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -32.6, y: 0, z: -5.3}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5485587415826917693}
@@ -17492,6 +17481,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &5485587415826853468
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5485587415826585347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.8200915
+  m_Direction: 1
+  m_Center: {x: 2.7, y: 0.9256412, z: 1.13}
+--- !u!136 &5485587415826853469
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5485587415826585347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.7614841
+  m_Direction: 1
+  m_Center: {x: -2.71, y: 0.80698586, z: 1.07}
+--- !u!136 &5485587415826853470
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5485587415826585347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9278978
+  m_Height: 2.4720325
+  m_Direction: 1
+  m_Center: {x: 0.25, y: 2.4242287, z: 0.28479588}
 --- !u!4 &5485587415826853839
 Transform:
   m_ObjectHideFlags: 0
