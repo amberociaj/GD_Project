@@ -16,6 +16,7 @@ public class Dragon : MonoBehaviour
         if( HP <= 0)
         {
             animator.SetTrigger("die");
+            
             GetComponent<Collider>().enabled = false;
         }
         else

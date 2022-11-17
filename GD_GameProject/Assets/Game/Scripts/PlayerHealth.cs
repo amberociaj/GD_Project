@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -13,9 +14,12 @@ public class PlayerHealth : MonoBehaviour
 
     {
         PH -= damageAmount;
+       
         if (PH <= 0)
         {
             animator.SetTrigger("die");
+            
+            SceneManager.LoadScene("DeathScene");
             //GetComponent<Collider>().enabled = false;
         }
         else
@@ -34,5 +38,14 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         playerhealthBar.value = PH;
+    }
+
+    public void GainHealth(int gh)
+    {
+        if (PH < 29)
+        {
+            PH += gh;
+   
+        }
     }
 }

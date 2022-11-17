@@ -4,15 +4,46 @@ using UnityEngine;
 
 public class Warrokfists : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Rigidbody fistsRigidBody;
+    //[SerializeField] private Transform vfxHitGreen;
+    //[SerializeField] private Transform vfxHitRed;
+    public int warrokdamageAmount = 2;
+
+    private void Awake()
     {
-        
+        fistsRigidBody = GetComponent<Rigidbody>();
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+
+        //float speed = 40f;
+        //fistsRigidBody.velocity = transform.forward * speed;
+        //Destroy(gameObject, 5);
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // if ( other.GetComponent<BulletTarget>() != null)
+        // {
+        //hit target
+        //Instantiate(vfxHitGreen, transform.position, Quaternion.identity);
+        // }
+        // else
+        // {
+        //hit something else
+        //Instantiate(vfxHitRed, transform.position, Quaternion.identity);
+        // }
+        // Destroy(gameObject);
+
+
+        Destroy(transform.GetComponent<Rigidbody>());
+        if (other.tag == "Player")
+        {
+            other.GetComponent<PlayerHealth>().TakeDamage(warrokdamageAmount);
+        }
     }
 }

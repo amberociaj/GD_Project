@@ -9,6 +9,7 @@ TagManager:
   - WayPoints
   - Warrok
   - Dragon
+  - healthincrease
   layers:
   - Default
   - TransparentFX

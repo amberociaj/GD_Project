@@ -13,10 +13,11 @@ public class Warrok : MonoBehaviour
 
     {
         WP -= damageAmount;
-        if (WP <= 0)
+        if (WP <= 1)
         {
             animator.SetTrigger("die");
             GetComponent<Collider>().enabled = false;
+            Destroy(gameObject,5);
         }
         else
         {
