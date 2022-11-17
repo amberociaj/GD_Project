@@ -15,12 +15,12 @@ public class PlayerHealth : MonoBehaviour
         PH -= damageAmount;
         if (PH <= 0)
         {
-            //animator.SetTrigger("die");
+            animator.SetTrigger("die");
             //GetComponent<Collider>().enabled = false;
         }
         else
         {
-            //animator.SetTrigger("damage");
+            animator.SetTrigger("damage");
         }
     }
 
