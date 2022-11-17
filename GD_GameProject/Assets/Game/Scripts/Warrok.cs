@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Warrok : MonoBehaviour
 {
-    int WP = 20;
+    int WP = 16;
     public Slider warrokhealthBar;
     public Animator animator;
 
@@ -17,7 +17,7 @@ public class Warrok : MonoBehaviour
         {
             animator.SetTrigger("die");
             GetComponent<Collider>().enabled = false;
-            Destroy(gameObject,5);
+            Destroy(gameObject,3);
         }
         else
         {

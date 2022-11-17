@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Dragon : MonoBehaviour
 {
-    int HP = 40;
+    int HP = 26;
     public Slider healthBar;
     public Animator animator;
 
@@ -18,6 +18,7 @@ public class Dragon : MonoBehaviour
             animator.SetTrigger("die");
             
             GetComponent<Collider>().enabled = false;
+            Destroy(gameObject, 4);
         }
         else
         {

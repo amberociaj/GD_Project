@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Game/Menu/Menu.unity
     guid: 0c4d4c8888dc3ad4eabd8682bfe7974f
   - enabled: 1
-    path: Assets/Game/Game.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Game/Game1.unity
+    guid: d462106908785274989fe41ce78247ca
   - enabled: 1
     path: Assets/Game/Game2.unity
-    guid: 7d043486e9814f44b906e6c4bbaa91b3
+    guid: 2e7835c09ea0ecf4481878eb602c8715
   - enabled: 1
     path: Assets/Game/Menu/DeathScene.unity
     guid: bdca55e93fde1d446b83cb4c651e6fda

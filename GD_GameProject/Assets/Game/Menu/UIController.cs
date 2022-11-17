@@ -12,7 +12,14 @@ public class UIController : MonoBehaviour
         {
             Application.Quit();
         }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            Backtomenu();
+        }
     }
+
+
 
     public void Backtomenu()
     {
@@ -21,7 +28,7 @@ public class UIController : MonoBehaviour
 
     public void Retry1()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Game1");
     }  
     
     public void Retry2()
@@ -34,10 +41,6 @@ public class UIController : MonoBehaviour
         SceneManager.LoadScene("Game3");
     }
 
-    public void NextLevel()
-    {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
 
 }
