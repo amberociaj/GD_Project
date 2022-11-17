@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b22ca68c523157b4b9dea9714e351c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 20
+  dragondamageAmount: 2
 --- !u!135 &79928056
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -442,8 +442,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.176258
-  m_Center: {x: 0.0039014812, y: -0.0000000022113258, z: -0.034987923}
+  m_Radius: 1.3184382
+  m_Center: {x: 0.0039014833, y: -0.009106869, z: 0.11629914}
 --- !u!23 &79928057
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2405,7 +2405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc4dceceb09b79e4daff77f3e321ecb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
+  HP: 60
   healthBar: {fileID: 5485587414528437393}
   animator: {fileID: 5485587415817070367}
 --- !u!1 &1096517607
@@ -5921,7 +5921,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 500
+  m_MaxValue: 30
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -14525,7 +14525,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 60
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -14558,7 +14558,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 5.99
-  m_Speed: 3
+  m_Speed: 5
   m_Acceleration: 5
   avoidancePriority: 50
   m_AngularSpeed: 100
@@ -19986,7 +19986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426f636520f42f84a9310e9099a7cae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PH: 500
+  PH: 30
   playerhealthBar: {fileID: 1489735647}
   animator: {fileID: 890857618902376004}
 --- !u!136 &7879422601904980731

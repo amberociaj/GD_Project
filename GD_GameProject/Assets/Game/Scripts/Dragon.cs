@@ -33,6 +33,7 @@ public class Dragon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.value = HP;  
+        healthBar.value = HP;
+        
     }
 }

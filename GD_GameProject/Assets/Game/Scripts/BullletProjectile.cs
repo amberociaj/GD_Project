@@ -7,7 +7,7 @@ public class BullletProjectile : MonoBehaviour
     private Rigidbody bulletRigidBody;
     //[SerializeField] private Transform vfxHitGreen;
     //[SerializeField] private Transform vfxHitRed;
-    public int damageAmount = 20;
+    public int bulletdamageAmount = 1;
 
     private void Awake()
     {
@@ -44,7 +44,7 @@ public class BullletProjectile : MonoBehaviour
         if (other.tag == "Enemy")
         {
             transform.parent = other.transform;
-            other.GetComponent<Dragon>().TakeDamage(damageAmount);
+            other.GetComponent<Dragon>().TakeDamage(bulletdamageAmount);
         }
     }
 }

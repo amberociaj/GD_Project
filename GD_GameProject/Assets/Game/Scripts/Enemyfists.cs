@@ -7,7 +7,7 @@ public class Enemyfists : MonoBehaviour
     private Rigidbody fistsRigidBody;
     //[SerializeField] private Transform vfxHitGreen;
     //[SerializeField] private Transform vfxHitRed;
-    public int damageAmount = 20;
+    public int dragondamageAmount = 2;
 
     private void Awake()
     {
@@ -43,7 +43,7 @@ public class Enemyfists : MonoBehaviour
         Destroy(transform.GetComponent<Rigidbody>());
         if (other.tag == "Player")
         {
-            other.GetComponent<PlayerHealth>().TakeDamage(damageAmount);
+            other.GetComponent<PlayerHealth>().TakeDamage(dragondamageAmount);
         }
     }
 }
