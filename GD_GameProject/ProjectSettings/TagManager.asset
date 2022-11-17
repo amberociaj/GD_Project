@@ -7,6 +7,8 @@ TagManager:
   - CinemachineTarget
   - Enemy
   - WayPoints
+  - Warrok
+  - Dragon
   layers:
   - Default
   - TransparentFX

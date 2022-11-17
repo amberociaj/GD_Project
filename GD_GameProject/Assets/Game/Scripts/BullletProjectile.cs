@@ -41,10 +41,16 @@ public class BullletProjectile : MonoBehaviour
 
 
         Destroy(transform.GetComponent<Rigidbody>());
-        if (other.tag == "Enemy")
+        if (other.tag == "Dragon")
         {
             transform.parent = other.transform;
             other.GetComponent<Dragon>().TakeDamage(bulletdamageAmount);
+        }
+
+        if (other.tag == "Warrok")
+        {
+            transform.parent = other.transform;
+            other.GetComponent<Warrok>().TakeDamage(bulletdamageAmount);
         }
     }
 }
