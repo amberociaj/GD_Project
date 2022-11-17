@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Warrok : MonoBehaviour
 {
-    public int WP = 100;
+    int WP = 20;
     public Slider warrokhealthBar;
     public Animator animator;
 

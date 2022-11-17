@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Dragon : MonoBehaviour
 {
-    public int HP = 100;
+    int HP = 40;
     public Slider healthBar;
     public Animator animator;
 
