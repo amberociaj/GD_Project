@@ -7,6 +7,7 @@ public class runstate : StateMachineBehaviour
 {
     NavMeshAgent agent;
     Transform player;
+    public int chasespeed = 6;
   
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -14,7 +15,7 @@ public class runstate : StateMachineBehaviour
     {
         agent = animator.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        agent.speed = 5f;
+        agent.speed = chasespeed;
 
     }
 

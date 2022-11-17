@@ -6,6 +6,7 @@ public class attackstate : StateMachineBehaviour
 {
 
     Transform player;
+    public float attackdistance = 3f;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -17,7 +18,7 @@ public class attackstate : StateMachineBehaviour
     {
         animator.transform.LookAt(player);
         float distance = Vector3.Distance(player.position, animator.transform.position);
-        if (distance > 7f)
+        if (distance > attackdistance)
             animator.SetBool("isAttacking", false);
     }
 

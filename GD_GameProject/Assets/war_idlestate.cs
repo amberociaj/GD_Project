@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class idlestate : StateMachineBehaviour
+public class war_idlestate : StateMachineBehaviour
 {
     float timer;
     Transform player;
@@ -30,7 +30,7 @@ public class idlestate : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
+
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
